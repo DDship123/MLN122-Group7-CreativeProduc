@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phân Hóa Giàu Nghèo Trong Kinh Tế Thị Trường TBCN | MLN122 - Nhóm 07</title>
+  <meta name="description"
+    content="Trang web tư liệu & chi tiết bài thuyết trình Kinh tế Chính trị Mác - Lênin (MLN122) về Phân hóa giàu nghèo trong nền kinh tế thị trường tư bản chủ nghĩa - Nhóm 07, SE1913." />
+
+  <!-- Google Fonts: Montserrat (tiêu đề retro vintage) & Be Vietnam Pro (nội dung tiếng Việt sắc nét) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#hero" class="topbar__brand">
+        <span class="dot"></span>
+        <span>MLN122 <span class="full">· KINH TẾ CHÍNH TRỊ MÁC - LÊNIN</span></span>
+      </a>
+      <div class="topbar__part" id="currentPartLabel">Môn học MLN122 · Nhóm 07 · SE1913</div>
+      <button class="topbar__btn" id="openTocBtn" aria-label="Mở mục lục">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span>Mục Lục</span>
+      </button>
+    </div>
+    <div class="progress" id="progressBar"></div>
+  </header>
+
+  <!-- ================= DRAWER MỤC LỤC ================= -->
+  <div class="drawer" id="tocDrawer" aria-hidden="true">
+    <div class="drawer__backdrop" id="drawerBackdrop"></div>
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <span>NỘI DUNG BÀI THUYẾT TRÌNH</span>
+        <button class="drawer__close" id="closeTocBtn" aria-label="Đóng mục lục">&times;</button>
+      </div>
+      <nav class="drawer__list">
+        <a href="#hero">
+          <span class="num">00</span>
+          <div>
+            <strong>Trang bìa & Thông tin Nhóm</strong>
+            <small>Chủ đề, Giảng viên & Thành viên lớp SE1913</small>
+          </div>
+        </a>
+        <a href="#khuyettat">
+          <span class="num">01</span>
+          <div>
+            <strong>Khuyết tật nội tại của KTTT</strong>
+            <small>Nguồn gốc ban đầu của phân hóa xã hội</small>
+          </div>
+        </a>
+        <a href="#phan1">
+          <span class="num">02</span>
+          <div>
+            <strong>Phần 1: Quy luật Giá trị & Cạnh tranh</strong>
+            <small>Khởi nguồn đào thải và tích tụ tư bản</small>
+          </div>
+        </a>
+        <a href="#phan2">
+          <span class="num">03</span>
+          <div>
+            <strong>Phần 2: Hàng hóa Sức lao động & Thặng dư</strong>
+            <small>G = c + (v+m) & Vỏ bọc tiền công</small>
+          </div>
+        </a>
+        <a href="#phan3">
+          <span class="num">04</span>
+          <div>
+            <strong>Phần 3: Tích lũy tư bản & Bần cùng hóa</strong>
+            <small>Cấu tạo hữu cơ c/v & Tích lũy ở hai cực</small>
+          </div>
+        </a>
+        <a href="#phan4">
+          <span class="num">05</span>
+          <div>
+            <strong>Phần 4: Bốn nấc thang Độc quyền (Citigroup)</strong>
+            <small>Từ 1812 đến 2025 & Tài phiệt tài chính</small>
+          </div>
+        </a>
+        <a href="#toancau">
+          <span class="num">06</span>
+          <div>
+            <strong>Phân cực Giàu - Nghèo Toàn cầu</strong>
+            <small>Báo cáo Oxfam 2025/2026 & Dòng vốn xuyên biên giới</small>
+          </div>
+        </a>
+        <a href="#phan5">
+          <span class="num">07</span>
+          <div>
+            <strong>Phần 5: Mâu thuẫn cơ bản & Bài học Việt Nam</strong>
+            <small>Thực tiễn hiện đại & Phát triển vì con người</small>
+          </div>
+        </a>
+        <a href="#quiz">
+          <span class="num">08</span>
+          <div>
+            <strong>Kiểm tra kiến thức MLN122</strong>
+            <small>20 câu hỏi trắc nghiệm tương tác & tải kết quả</small>
+          </div>
+        </a>
+        <a href="#tailieu">
+          <span class="num">09</span>
+          <div>
+            <strong>Tài liệu Tham khảo & Lời cảm ơn</strong>
+            <small>Giáo trình & Báo cáo quốc tế</small>
+          </div>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__art">
+      <img src="assets/img/hero.jpg" alt="Minh họa tranh cổ động phân hóa giàu nghèo" width="1920" height="1080" />
+    </div>
+    <div class="hero__content">
+      <div class="hero__kicker">BỘ MÔN LÝ LUẬN CHÍNH TRỊ – MÔN KINH TẾ CHÍNH TRỊ MÁC - LÊNIN (MLN122)</div>
+      <h1 class="reveal">
+        PHÂN HÓA<br />
+        <span class="red l2">GIÀU NGHÈO</span>
+      </h1>
+      <p class="hero__sub reveal d1">TRONG KINH TẾ THỊ TRƯỜNG</p>
+      <p class="hero__sub2 reveal d2">TƯ BẢN CHỦ NGHĨA</p>
+
+      <div class="hero__meta reveal d3">
+        Lớp: <strong>SE1913</strong> <span>|</span> Nhóm: <strong>07</strong>
+      </div>
+
+      <div class="members reveal d4">
+        <h3>Danh sách Thành viên Nhóm</h3>
+        <ul>
+          <li><span>Bùi Bảo Dương</span> <em>SE192947</em></li>
+          <li><span>Dương Quang Long</span> <em>SE194068</em></li>
+          <li><span>Nguyễn Sỹ Thanh Tùng</span> <em>SE194713</em></li>
+          <li><span>Mai Đoàn Thùy Trâm</span> <em>SE196474</em></li>
+          <li><span>Nguyễn Phước Đức Minh</span> <em>SE194233</em></li>
+        </ul>
+      </div>
+
+      <div class="hero__cta reveal d4">
+        <a href="#khuyettat" class="btn btn--red">
+          <span>Bắt đầu Khám phá Nội dung</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <!-- <a href="https://www.canva.com/design/DAHYU-ccS-w/8z7nTo2DEgoZOFZ1z3HH0Q/view" target="_blank"
+          rel="noopener noreferrer" class="btn">
+          <span>Xem bản gốc trên Canva</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+          </svg>
+        </a> -->
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"></div>
+  </section>
+
+  <!-- ================= ROADMAP 5 PHẦN ================= -->
+  <section class="roadmap">
+    <div class="container">
+      <div class="roadmap__grid">
+        <a href="#phan1" class="road-card reveal">
+          <span class="n">01</span>
+          <small>Phần 1</small>
+          <h3>Cơ Chế Thị Trường & Cạnh Tranh</h3>
+          <p>Quy luật giá trị, cạnh tranh và sự phân hóa những người sản xuất ban đầu.</p>
+        </a>
+        <a href="#phan2" class="road-card reveal d1">
+          <span class="n">02</span>
+          <small>Phần 2</small>
+          <h3>Hàng Hóa Sức Lao Động & Thặng Dư</h3>
+          <p>Bản chất bóc lột, công thức G = c + v + m và tấm màn che tiền công.</p>
+        </a>
+        <a href="#phan3" class="road-card reveal d2">
+          <span class="n">03</span>
+          <small>Phần 3</small>
+          <h3>Tích Lũy Tư Bản & Bần Cùng Hóa</h3>
+          <p>Tăng cấu tạo hữu cơ c/v, tích lũy sự giàu có và tích lũy sự bần cùng.</p>
+        </a>
+        <a href="#phan4" class="road-card reveal d3">
+          <span class="n">04</span>
+          <small>Phần 4</small>
+          <h3>Nấc Thang Độc Quyền & Toàn Cầu</h3>
+          <p>Citigroup qua 4 nấc độc quyền, tài phiệt, chế độ tham dự và bất bình đẳng quốc tế.</p>
+        </a>
+        <a href="#phan5" class="road-card reveal d4">
+          <span class="n">05</span>
+          <small>Phần 5</small>
+          <h3>Mâu Thuẫn Sâu Xa & Bài Học VN</h3>
+          <p>Mâu thuẫn cơ bản của TBCN và định hướng phát triển vì con người tại Việt Nam.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KHUYẾT TẬT NỘI TẠI ================= -->
+  <section class="slide" id="khuyettat">
+    <div class="container">
+      <div class="slide__tag"><span>DẪN NHẬP LÝ LUẬN KINH TẾ CHÍNH TRỊ</span></div>
+      <div class="split">
+        <div>
+          <h2 class="title-xl">
+            KHUYẾT TẬT NỘI TẠI<br />
+            <span class="red">CỦA KINH TẾ THỊ TRƯỜNG</span>
+          </h2>
+          <div class="statements">
+            <div class="statement">
+              Của cải xã hội tăng lên nhưng khoảng cách giàu nghèo ngày càng nới rộng.
+            </div>
+            <div class="statement">
+              Thị trường không tự khắc phục phân hóa thu nhập và cơ hội.
+            </div>
+            <div class="statement r">
+              Lợi ích được phân bổ theo mức độ sở hữu và vị trí tham gia thị trường.
+            </div>
+          </div>
+          <p class="highlight-red">
+            Phân hóa giàu nghèo không phải là hiện tượng ngẫu nhiên, mà là khuyết tật có tính quy luật nội tại của kinh
+            tế thị trường khi thiếu vắng sự điều tiết vì cộng đồng.
+          </p>
+        </div>
+
+        <div>
+          <div class="grid-2">
+            <div class="tile tile--blue">
+              <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14h-2v-2h2zm0-4h-2V7h2z" />
+              </svg>
+              <h3>Rủi ro khủng hoảng</h3>
+              <p>Cơ chế thị trường không tự động tạo ra cân đối, dẫn đến khủng hoảng chu kỳ và tổn thất nặng nề cho
+                người lao động yếu thế.</p>
+            </div>
+            <div class="tile tile--pink">
+              <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+              </svg>
+              <h3>Phân hóa sâu sắc</h3>
+              <p>Phân bổ lợi ích theo vốn và tài sản tích tụ, biến sự chênh lệch ban đầu thành hố sâu phân cực xã hội
+                không thể tự hàn gắn.</p>
+            </div>
+          </div>
+
+          <!-- Trích dẫn giáo trình Mác - Lênin -->
+          <details class="textbook">
+            <summary>
+              <div class="book">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+                </svg>
+              </div>
+              <div class="t">
+                <strong>Đối chiếu Giáo trình Kinh tế Chính trị Mác - Lênin</strong>
+                <small>Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể (Trang 57 - 58)</small>
+              </div>
+              <span class="plus"></span>
+            </summary>
+            <div class="textbook__body">
+              <h5>Khuyết tật thứ ba của nền kinh tế thị trường:</h5>
+              <blockquote>
+                "Trong nền kinh tế thị trường, hiện tượng phân hóa xã hội về thu nhập, về cơ hội là tất yếu. Bản thân
+                nền kinh tế thị trường không thể tự khắc phục được khía cạnh phân hóa có xu hướng sâu sắc. Các quy luật
+                thị trường luôn phân bổ lợi ích theo mức độ và loại hình hoạt động tham gia thị trường, cộng với tác
+                động của cạnh tranh mà dẫn đến sự phân hóa như một tất yếu. Đây là khuyết tật của nền kinh tế thị trường
+                cần phải có sự bổ sung và điều tiết bởi vai trò của nhà nước."
+                <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin (Quốc gia), tr. 58</span>
+              </blockquote>
+              <p>Do đó, trong thực tế không tồn tại nền kinh tế thị trường tư bản thuần túy có thể tự mang lại sự bình
+                đẳng cho mọi tầng lớp xã hội.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHẦN 1: QUY LUẬT GIÁ TRỊ & CẠNH TRANH ================= -->
+  <section class="part" id="phan1" data-num="1">
+    <div class="container">
+      <span class="part__label">PHẦN 1</span>
+      <h2>KHỞI NGUỒN TỪ <em>CƠ CHẾ THỊ TRƯỜNG</em> VÀ <em>QUY LUẬT CẠNH TRANH</em></h2>
+      <p>Cơ sở kinh tế đầu tiên phân hóa những người sản xuất hàng hóa độc lập thành kẻ thắng cuộc giàu sang và người
+        thua cuộc phải đi làm thuê.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>QUY LUẬT GIÁ TRỊ VÀ PHÂN HÓA TỰ NHIÊN</span></div>
+      <h2 class="title-lg">QUY LUẬT GIÁ TRỊ & CẠNH TRANH</h2>
+      <p class="subtitle-red">Sự đào thải khách quan trong quá trình trao đổi ngang giá</p>
+
+      <div class="split split--rev">
+        <div class="figure">
+          <img src="assets/img/competition.jpg"
+            alt="Con đường phân hai ngả: kẻ giàu bước lên nhà chọc trời, người nghèo đi xuống khói bụi" />
+          <figcaption>Hai ngả rẽ cạnh tranh: Tích tụ tư bản vs Phá sản bần cùng</figcaption>
+        </div>
+
+        <div>
+          <div class="grid-2">
+            <div class="tile tile--blue">
+              <h3>Người sản xuất có hao phí thấp</h3>
+              <p>Hao phí lao động cá biệt &lt; Hao phí xã hội cần thiết &rarr; Bán theo giá trị xã hội thu được lợi
+                nhuận siêu ngạch, nhanh chóng tích lũy tài sản.</p>
+            </div>
+            <div class="tile tile--pink">
+              <h3>Người thiếu vốn & công nghệ</h3>
+              <p>Trình độ lạc hậu, hao phí cá biệt &gt; Hao phí xã hội &rarr; Bán hàng bị thua lỗ, kiệt quệ tài chính và
+                đứng trước bờ vực phá sản.</p>
+            </div>
+            <div class="tile tile--pink">
+              <h3>Cạnh tranh đào thải khốc liệt</h3>
+              <p>Thị trường không chấp nhận kẻ chậm chân; đào thải những người không bắt kịp mức hao phí trung bình của
+                xã hội.</p>
+            </div>
+            <div class="tile tile--blue">
+              <h3>Tư bản tích tụ vào tay kẻ thắng</h3>
+              <p>Tư liệu sản xuất và tiền tệ tập trung vào một số ít chủ thể vượt trội, biến họ thành giai cấp tư sản sở
+                hữu quy mô lớn.</p>
+            </div>
+          </div>
+
+          <!-- Trích dẫn giáo trình -->
+          <details class="textbook">
+            <summary>
+              <div class="book">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+                </svg>
+              </div>
+              <div class="t">
+                <strong>Giáo trình Kinh tế Chính trị Mác - Lênin: Tác động của Quy luật giá trị</strong>
+                <small>Chương 2: Tác động phân hóa người sản xuất (Trang 60 - 61)</small>
+              </div>
+              <span class="plus"></span>
+            </summary>
+            <div class="textbook__body">
+              <blockquote>
+                "Thứ ba, phân hóa những người sản xuất thành những người giàu, người nghèo một cách tự nhiên. Trong quá
+                trình cạnh tranh, những người sản xuất nhạy bén với thị trường, trình độ năng lực giỏi, sản xuất với hao
+                phí cá biệt thấp hơn mức hao phí chung của xã hội sẽ trở nên giàu có. Ngược lại, những người do hạn chế
+                về vốn, kinh nghiệm sản xuất thấp kém, trình độ công nghệ lạc hậu... thì giá trị cá biệt sẽ cao hơn giá
+                trị xã hội và dễ lâm vào tình trạng thua lỗ, dẫn đến phá sản, thậm chí phải đi làm thuê."
+                <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 60 - 61</span>
+              </blockquote>
+              <p>Đây là mắt xích sơ khai giải thích vì sao ngay trong nền sản xuất hàng hóa giản đơn, mầm mống của phân
+                hóa giai cấp đã nảy sinh.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHẦN 2: HÀNG HÓA SỨC LAO ĐỘNG & THẶNG DƯ ================= -->
+  <section class="part" id="phan2" data-num="2">
+    <div class="container">
+      <span class="part__label">PHẦN 2</span>
+      <h2>GỐC RỄ BẢN CHẤT – <em>HÀNG HÓA SỨC LAO ĐỘNG</em> VÀ <em>BÓC LỘT GIÁ TRỊ THẶNG DƯ</em></h2>
+      <p>Bí mật lớn nhất của phương thức sản xuất tư bản chủ nghĩa: Bóc lột giá trị thặng dư dưới tấm bình phong mua bán
+        công bằng và hợp đồng lao động.</p>
+    </div>
+  </section>
+
+  <!-- CÔNG THỨC G = c + (v + m) -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>BẢN CHẤT CẤU THÀNH GIÁ TRỊ HÀNG HÓA</span></div>
+      <h2 class="title-lg">SỨC LAO ĐỘNG VÀ NGUỒN GỐC GIÁ TRỊ THẶNG DƯ</h2>
+      <p class="subtitle-red">Máy móc chỉ chuyển dịch giá trị – Chỉ có lao động sống mới sáng tạo giá trị thặng dư</p>
+
+      <!-- Luồng chuyển dịch giá trị -->
+      <div class="flow">
+        <div class="flow__node flow__node--c">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="6" width="20" height="12" rx="2" />
+            <circle cx="12" cy="12" r="3" />
+            <path d="M6 12h.01M18 12h.01" />
+          </svg>
+          <strong>GIÁ TRỊ CŨ (c)</strong>
+          <span>Máy móc, thiết bị, nguyên vật liệu</span>
+        </div>
+        <div class="flow__arrow">
+          <span>Chuyển bảo toàn</span>
+          <svg viewBox="0 0 60 24">
+            <path d="M2 12h48M42 6l8 6-8 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+          </svg>
+        </div>
+        <div class="flow__node flow__node--w">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <strong>LAO ĐỘNG SỐNG</strong>
+          <span>Sức lao động của người công nhân</span>
+        </div>
+        <div class="flow__arrow r">
+          <span>Sáng tạo mới</span>
+          <svg viewBox="0 0 60 24">
+            <path d="M2 12h48M42 6l8 6-8 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+          </svg>
+        </div>
+        <div class="flow__node flow__node--n">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          </svg>
+          <strong>GIÁ TRỊ MỚI (v + m)</strong>
+          <span>Bù đắp tiền lương + Thặng dư dôi ra</span>
+        </div>
+      </div>
+
+      <!-- Khối công thức nổi bật -->
+      <div class="formula-row">
+        <div class="formula-side l">
+          Máy móc chuyển giá trị cũ vào sản phẩm, không tự tạo giá trị thặng dư.
+        </div>
+        <div class="formula">
+          <span data-tip="G">G</span>
+          <span>=</span>
+          <span data-tip="c">c</span>
+          <span>+</span>
+          <span>(</span>
+          <span data-tip="v">v</span>
+          <span>+</span>
+          <span data-tip="m">m</span>
+          <span>)</span>
+        </div>
+        <div class="formula-side r">
+          Lao động sống tạo ra giá trị mới lớn hơn giá trị sức lao động đã bán.
+        </div>
+      </div>
+
+      <!-- Ví dụ kế toán kéo sợi của C. Mác từ giáo trình -->
+      <div class="example">
+        <div class="example__head">
+          <div>
+            <h3>Ví dụ kinh điển: Quá trình sản xuất sợi của C. Mác</h3>
+            <small style="color:var(--muted)">Nhà tư bản mua bông 50 USD, hao mòn máy 3 USD, mua SLĐ 1 ngày 8h giá 15
+              USD</small>
+          </div>
+          <div class="seg">
+            <button id="btnYarn4h">Chỉ làm 4 giờ</button>
+            <button id="btnYarn8h" class="on">Làm trọn 8 giờ (Có m)</button>
+          </div>
+        </div>
+
+        <div class="ledger">
+          <div class="ledger__col">
+            <h4>Chi phí tư bản ứng trước</h4>
+            <div class="ledger__row"><span>Tiền mua bông (c)</span><b id="yarnCotton">100 USD (100kg bông)</b></div>
+            <div class="ledger__row"><span>Hao mòn máy móc (c)</span><b id="yarnDeprec">6 USD (hao mòn máy)</b></div>
+            <div class="ledger__row"><span>Mua sức lao động (v)</span><b id="yarnWage">15 USD (tiền công khoán 8h)</b>
+            </div>
+            <div class="ledger__row total"><span>Tổng tư bản ứng trước (c + v)</span><b id="yarnTotalCost">121 USD</b>
+            </div>
+          </div>
+          <div class="ledger__col">
+            <h4>Giá trị sản phẩm sợi thu về</h4>
+            <div class="ledger__row"><span>Giá trị tư liệu sản xuất cũ chuyển vào</span><b>106 USD</b></div>
+            <div class="ledger__row"><span>Giá trị mới công nhân tạo ra (v + m)</span><b>30 USD (15v + 15m)</b></div>
+            <div class="ledger__row total"><span>Tổng giá trị sợi bán ra thị trường</span><b id="yarnRevenue">136 USD
+                (100kg sợi)</b></div>
+          </div>
+        </div>
+
+        <div class="ledger__result win" id="yarnResultText">
+          136 USD (Thu về) − 121 USD (Ứng trước) = +15 USD GIÁ TRỊ THẶNG DƯ (m)
+        </div>
+        <p class="source" id="yarnApplication">
+          Sau 8 giờ: Bằng việc bắt công nhân làm thêm 4 giờ thặng dư mà không trả thêm tiền công, nhà tư bản chiếm đoạt
+          trọn vẹn <strong>15 USD m</strong> (tỷ suất m' = 100%).
+        </p>
+      </div>
+
+      <!-- Trích dẫn giáo trình Mác - Lênin -->
+      <details class="textbook">
+        <summary>
+          <div class="book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+            </svg>
+          </div>
+          <div class="t">
+            <strong>Giáo trình Kinh tế Chính trị Mác - Lênin: Hàng hóa sức lao động</strong>
+            <small>Chương 3: Giá trị thặng dư trong nền kinh tế thị trường (Trang 78 - 82)</small>
+          </div>
+          <span class="plus"></span>
+        </summary>
+        <div class="textbook__body">
+          <blockquote>
+            "Giá trị sử dụng của hàng hóa sức lao động có tính năng đặc biệt mà không hàng hóa thông thường nào có được,
+            đó là trong khi sử dụng nó, không những giá trị của nó được bảo tồn mà còn tạo ra được lượng giá trị lớn
+            hơn. Đây chính là chìa khóa chỉ rõ nguồn gốc của giá trị lớn hơn giá trị thặng dư nêu trên do hao phí sức
+            lao động mà có."
+            <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 79</span>
+          </blockquote>
+          <blockquote>
+            "Như vậy, giá trị thặng dư là bộ phận giá trị mới dôi ra ngoài giá trị sức lao động do công nhân tạo ra, là
+            kết quả của lao động không công của công nhân cho nhà tư bản. Ký hiệu giá trị thặng dư là m."
+            <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 81</span>
+          </blockquote>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- VỎ BỌC TIỀN CÔNG & SIMULATOR NGÀY LAO ĐỘNG -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>ẢO TƯỞNG VỀ TIỀN CÔNG TRONG NỀN KINH TẾ THỊ TRƯỜNG</span></div>
+      <h2 class="title-lg">GIÁ TRỊ THẶNG DƯ VÀ VỎ BỌC TIỀN CÔNG</h2>
+
+      <!-- Banner chia đôi ngày làm việc giống slide Canva -->
+      <div class="workday-hero">
+        <img src="assets/img/surplus.jpg" alt="Phân chia 4 giờ lao động tất yếu và 4 giờ lao động thặng dư" />
+        <div class="workday-hero__labels">
+          <div class="l">
+            <span class="big">4 giờ</span>
+            <span><strong>lao động tất yếu:</strong><br />tạo giá trị bù đắp tiền lương.</span>
+          </div>
+          <div class="r">
+            <span class="big">4 giờ</span>
+            <span><strong>lao động thặng dư:</strong><br />tạo giá trị thặng dư cho nhà tư bản.</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="wage-quote">
+        "Tiền công khiến quan hệ lao động có vẻ như được trả cho toàn bộ thời gian làm việc."
+      </p>
+
+      <!-- Bảng mô phỏng tương tác ngày lao động -->
+      <div class="sim">
+        <h3>Mô Phỏng Trực Quan Ngày Lao Động & Phương Pháp Bóc Lột</h3>
+        <p>Kéo các thanh trượt để quan sát cách nhà tư bản biến đổi Tỷ suất Giá trị Thặng dư (m') và bần cùng hóa người
+          lao động:</p>
+
+        <div class="sim__presets">
+          <button class="chip on" data-preset="standard">Chuẩn (8h = 4h + 4h)</button>
+          <button class="chip" data-preset="absolute">Bóc lột Tuyệt đối (Kéo dài lên 11h)</button>
+          <button class="chip" data-preset="relative">Bóc lột Tương đối (Rút tất yếu còn 2h)</button>
+          <button class="chip" data-preset="tech">Công nghệ cao (10h, tất yếu 1.5h)</button>
+        </div>
+
+        <div class="sim__controls">
+          <div class="range">
+            <label><span>Tổng thời gian ngày lao động:</span> <output id="outWorkday">8h</output></label>
+            <input type="range" id="rangeWorkday" min="6" max="16" step="0.5" value="8" />
+          </div>
+          <div class="range">
+            <label><span>Thời gian lao động tất yếu (bù lương):</span> <output id="outNecessary">4h</output></label>
+            <input type="range" id="rangeNecessary" min="1" max="6" step="0.5" value="4" />
+          </div>
+        </div>
+
+        <!-- Thanh ngày lao động -->
+        <div class="daybar">
+          <div class="daybar__nec" id="daybarNec" style="width: 50%;">Tất yếu: 4h (50%)</div>
+          <div class="daybar__sur" id="daybarSur" style="width: 50%;">Thặng dư: 4h (50%)</div>
+        </div>
+        <div class="dayticks">
+          <span>0h (Bắt đầu ca)</span>
+          <span>Hết giờ bù lương (Hợp đồng hoàn tất)</span>
+          <span>Kết thúc ca (Lao động không công)</span>
+        </div>
+
+        <div class="sim__out">
+          <div class="stat">
+            <small>Thời gian thặng dư (t')</small>
+            <b id="statSurHour">4.0 giờ</b>
+          </div>
+          <div class="stat">
+            <small>Tỷ suất bóc lột m' = (t'/t) × 100%</small>
+            <b class="gold" id="statRate">100%</b>
+          </div>
+          <div class="stat">
+            <small>Khối lượng m (100 công nhân/ngày)</small>
+            <b id="statMass">4.000 USD</b>
+          </div>
+        </div>
+
+        <div class="sim__note" id="simNote">
+          Mô hình chuẩn thời C. Mác: Ngày làm việc 8 giờ, chia đều 4 giờ tất yếu và 4 giờ thặng dư.
+        </div>
+      </div>
+
+      <!-- Trích dẫn giáo trình -->
+      <details class="textbook">
+        <summary>
+          <div class="book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+            </svg>
+          </div>
+          <div class="t">
+            <strong>Giáo trình Kinh tế Chính trị Mác - Lênin: Bản chất của tiền công</strong>
+            <small>Chương 3: Tiền công (Trang 84 - 85)</small>
+          </div>
+          <span class="plus"></span>
+        </summary>
+        <div class="textbook__body">
+          <blockquote>
+            "Tiền công là giá cả của hàng hóa sức lao động. Đó là bộ phận của giá trị mới do chính hao phí sức lao động
+            của người lao động làm thuê tạo ra, nhưng nó lại thường được hiểu là do người mua sức lao động trả cho người
+            lao động làm thuê. Cứ sau một thời gian lao động nhất định, người lao động làm thuê được trả một khoản tiền
+            công nhất định. Điều đó thậm chí làm cho người lao động cũng nhầm hiểu là người mua sức lao động đã trả công
+            cho mình. Trái lại, nguồn gốc của tiền công chính là do hao phí sức lao động của người lao động làm thuê tự
+            trả cho mình thông qua sổ sách của người mua hàng hóa sức lao động."
+            <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 84</span>
+          </blockquote>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= PHẦN 3: TÍCH LŨY TƯ BẢN & BẦN CÙNG HÓA ================= -->
+  <section class="part" id="phan3" data-num="3">
+    <div class="container">
+      <span class="part__label">PHẦN 3</span>
+      <h2>ĐỘNG LỰC TRỰC TIẾP – <em>TÍCH LŨY TƯ BẢN</em> VÀ <em>QUY LUẬT BẦN CÙNG HÓA</em></h2>
+      <p>Cơ chế biến giá trị thặng dư thành tư bản phụ thêm: Tại sao tư bản tích tụ càng nhiều thì thất nghiệp và bất
+        bình đẳng càng trầm trọng?</p>
+    </div>
+  </section>
+
+  <!-- CẤU TẠO HỮU CƠ TĂNG LÊN -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>CẤU TẠO HỮU CƠ VÀ QUY LUẬT TÍCH TỤ TƯ BẢN</span></div>
+      <h2 class="title-lg">TÍCH LŨY TƯ BẢN VÀ CẤU TẠO HỮU CƠ TĂNG LÊN</h2>
+
+      <div class="split">
+        <div>
+          <ol class="numbered">
+            <li>
+              <span><strong>Một phần giá trị thặng dư trở thành tư bản phụ thêm:</strong> Nhà tư bản không tiêu dùng hết
+                m mà tái đầu tư mở rộng sản xuất.</span>
+            </li>
+            <li>
+              <span><strong>Cạnh tranh thúc đẩy máy móc (c) tăng nhanh hơn lao động (v):</strong> Tỷ lệ c/v tăng vọt,
+                máy móc thay thế con người, giảm tỷ trọng lao động sống.</span>
+            </li>
+            <li>
+              <span><strong>Tích tụ và tập trung làm quy mô tài sản tư bản lớn hơn:</strong> Thâu tóm đối thủ cạnh tranh
+                nhỏ, hình thành những đế chế độc quyền khổng lồ.</span>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <!-- Vòng lặp tích lũy tư bản -->
+          <div class="cycle">
+            <svg class="ring" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(30, 63, 90, 0.18)" stroke-width="6"
+                stroke-dasharray="8 6" />
+            </svg>
+            <div class="cycle__center">
+              <b>c / v ↑</b>
+              <small>Cấu tạo hữu cơ</small>
+            </div>
+            <button class="cycle__node n1 on" data-node="n1">Giá trị thặng dư (m)</button>
+            <button class="cycle__node n2" data-node="n2">Đầu tư máy móc (c)</button>
+            <button class="cycle__node n3" data-node="n3">Tích tụ & Tập trung</button>
+            <button class="cycle__node n4" data-node="n4">Thuê lao động (v)</button>
+          </div>
+
+          <div class="cycle__info" id="cycleInfoBox">
+            <strong>1. Chiếm đoạt Giá trị Thặng dư (m)</strong>
+            <p style="margin:6px 0 0; color:var(--muted)">Nhà tư bản thu về giá trị thặng dư m do lao động không công
+              tạo ra. Một phần lớn được giữ lại để 'tư bản hóa' tiếp tục chu kỳ bóc lột mới.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trích dẫn giáo trình Mác - Lênin -->
+      <details class="textbook">
+        <summary>
+          <div class="book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+            </svg>
+          </div>
+          <div class="t">
+            <strong>Giáo trình Kinh tế Chính trị Mác - Lênin: Hệ quả của tích lũy tư bản</strong>
+            <small>Chương 3: Cấu tạo hữu cơ và bần cùng hóa (Trang 96 - 98)</small>
+          </div>
+          <span class="plus"></span>
+        </summary>
+        <div class="textbook__body">
+          <blockquote>
+            "Cấu tạo hữu cơ của tư bản là cấu tạo giá trị được quyết định bởi cấu tạo kỹ thuật và phản ánh sự biến đổi
+            của cấu tạo kỹ thuật của tư bản (ký hiệu là c/v)... Quá trình tích lũy tư bản không ngừng làm tăng cấu tạo
+            hữu cơ của tư bản. Cùng với sự gia tăng quy mô sản xuất và cấu tạo hữu cơ của tư bản, tư bản khả biến có xu
+            hướng giảm tương đối so với tư bản bất biến, dẫn tới nguy cơ thừa nhân khẩu. Do đó, quá trình tích lũy tư
+            bản có tính hai mặt, một mặt thể hiện tích lũy sự giàu sang về phía giai cấp tư sản; mặt khác tích lũy sự
+            bần cùng về phía giai cấp công nhân làm thuê."
+            <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 96 - 98</span>
+          </blockquote>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- TÍCH LŨY Ở HAI CỰC ĐỐI LẬP -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>QUY LUẬT TÍCH LŨY TUYỆT ĐỐI CỦA C. MÁC</span></div>
+      <div class="split">
+        <div>
+          <h2 class="title-xl">
+            TÍCH LŨY Ở<br />
+            <span class="red">HAI CỰC ĐỐI LẬP</span>
+          </h2>
+
+          <div class="statements">
+            <div class="statement">
+              <strong>Tư sản:</strong> Tích lũy của cải, tư bản và sự giàu sang vô hạn.
+            </div>
+            <div class="statement r">
+              <strong>Công nhân:</strong> Đối mặt áp bức, kiệt quệ sức khỏe và thường trực nguy cơ thất nghiệp.
+            </div>
+            <div class="statement">
+              <strong>Bần cùng hóa tương đối:</strong> Tỷ trọng thu nhập của người lao động ngày càng giảm sút nghiêm
+              trọng so với giới chủ tư bản.
+            </div>
+            <div class="statement r">
+              <strong>Bần cùng hóa tuyệt đối:</strong> Mức sống sụt giảm thực tế, thường xuất hiện trong khủng hoảng,
+              lạm phát và bộ phận thất nghiệp.
+            </div>
+          </div>
+
+          <div class="verdict">
+            Thực tế nước Mỹ: Chênh lệch lương CEO / Công nhân từ 20 lần (năm 1965) đã vọt lên ~300 lần hiện nay!
+            <small>Nguồn: Economic Policy Institute (EPI Research Report)</small>
+          </div>
+        </div>
+
+        <div>
+          <!-- So sánh tỷ lệ lương CEO / Công nhân -->
+          <div class="ratio">
+            <h4>Biểu đồ chênh lệch thu nhập CEO / Công nhân Mỹ (EPI)</h4>
+            <div class="ratio__row">
+              <span>1965</span>
+              <div class="ratio__track">
+                <div class="ratio__fill" style="width: 7%;"></div>
+              </div>
+              <b>20 : 1</b>
+            </div>
+            <div class="ratio__row">
+              <span>1989</span>
+              <div class="ratio__track">
+                <div class="ratio__fill" style="width: 20%;"></div>
+              </div>
+              <b>58 : 1</b>
+            </div>
+            <div class="ratio__row">
+              <span>2000</span>
+              <div class="ratio__track">
+                <div class="ratio__fill r" style="width: 100%;"></div>
+              </div>
+              <b>393 : 1</b>
+            </div>
+            <div class="ratio__row">
+              <span>Hiện nay</span>
+              <div class="ratio__track">
+                <div class="ratio__fill r" style="width: 76%;"></div>
+              </div>
+              <b>~300 : 1</b>
+            </div>
+            <p class="source">
+              Trong khi lương CEO tăng hơn 1.460% kể từ 1978, tiền lương thực tế của công nhân sản xuất điển hình chỉ
+              tăng 18,1% (sau khi trừ lạm phát).
+            </p>
+          </div>
+
+          <div class="compare">
+            <div class="box">
+              <h4><i>A</i> Bần cùng hóa tương đối</h4>
+              <p style="margin:0; font-size:0.92rem; color:var(--muted);">
+                Kinh tế vẫn tăng trưởng, của cải làm ra nhiều hơn, nhưng phần bánh phân phối cho giai cấp công nhân ngày
+                càng teo nhỏ so với phần nuốt trọn của các ông chủ tư bản.
+              </p>
+            </div>
+            <div class="box">
+              <h4><i>B</i> Bần cùng hóa tuyệt đối</h4>
+              <p style="margin:0; font-size:0.92rem; color:var(--muted);">
+                Mức sống thực tế sụt giảm: không đủ trả tiền thuê nhà, gánh nợ học phí, mất bảo hiểm y tế khi rơi vào
+                hàng ngũ 'đội quân thất nghiệp dự bị'.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHẦN 4: BỐN NẤC THANG ĐỘC QUYỀN - CITIGROUP (SLIDES 8 - 12) ================= -->
+  <section class="part" id="phan4" data-num="4">
+    <div class="container">
+      <span class="part__label">PHẦN 4</span>
+      <h2>NẤC THANG ĐỘC QUYỀN VÀ <em>PHÂN HÓA TOÀN CẦU</em></h2>
+      <p>Nghiên cứu điển hình: Quá trình phát triển của Tập đoàn Citigroup (1812 - 2025) qua bốn nấc thang độc quyền và
+        cơ chế tư bản tài chính toàn cầu.</p>
+    </div>
+  </section>
+
+  <!-- TỔNG QUAN 4 NẤC THANG -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>TỔNG QUAN BỐN GIAI ĐOẠN ĐỘC QUYỀN</span></div>
+      <h2 class="title-lg">Citigroup đi qua bốn nấc thang độc quyền</h2>
+      <p class="subtitle-red">Nhấp vào từng nấc thang để xem chi tiết lý luận và số liệu hồ sơ lịch sử</p>
+
+      <div class="ladder">
+        <button class="rung on" data-rung="0">
+          <div class="rung__head">
+            <small>NẤC 1</small>
+            <strong>Độc quyền tư nhân</strong>
+          </div>
+          <div class="rung__body">
+            <p><strong>Lý luận:</strong> Tích tụ, tập trung tư bản; cạnh tranh làm doanh nghiệp nhỏ phá sản.</p>
+            <p><strong>Citigroup:</strong> Tiền thân City Bank of New York thâu tóm Third National Bank (1897).</p>
+          </div>
+          <div class="rung__foot">1894: Ngân hàng lớn nhất nước Mỹ</div>
+          <div class="rung__more">Xem chi tiết &rarr;</div>
+        </button>
+
+        <button class="rung" data-rung="1">
+          <div class="rung__head">
+            <small>NẤC 2</small>
+            <strong>Tư bản tài chính, tài phiệt</strong>
+          </div>
+          <div class="rung__body">
+            <p><strong>Lý luận:</strong> Ngân hàng hợp nhất với độc quyền công nghiệp thành tư bản tài chính.</p>
+            <p><strong>Citigroup:</strong> Liên minh Stillman – Rockefeller; năm 1998 Citicorp hợp nhất Travelers.</p>
+          </div>
+          <div class="rung__foot">Hai con gái Stillman lấy hai con trai W. Rockefeller</div>
+          <div class="rung__more">Xem chi tiết &rarr;</div>
+        </button>
+
+        <button class="rung" data-rung="2">
+          <div class="rung__head">
+            <small>NẤC 3</small>
+            <strong>Độc quyền nhà nước</strong>
+          </div>
+          <div class="rung__body">
+            <p><strong>Lý luận:</strong> Nhà nước dùng sức mạnh kinh tế bảo vệ độc quyền khi khủng hoảng.</p>
+            <p><strong>Citigroup:</strong> Gói cứu trợ tài chính 2008–2009 (Chương trình CPP & TIP).</p>
+          </div>
+          <div class="rung__foot">45 tỷ USD vốn; bảo lãnh danh mục 301 tỷ USD</div>
+          <div class="rung__more">Xem chi tiết &rarr;</div>
+        </button>
+
+        <button class="rung" data-rung="3">
+          <div class="rung__head">
+            <small>NẤC 4</small>
+            <strong>Độc quyền xuyên quốc gia</strong>
+          </div>
+          <div class="rung__body">
+            <p><strong>Lý luận:</strong> Xuất khẩu tư bản, công ty xuyên quốc gia, liên minh độc quyền quốc tế.</p>
+            <p><strong>Citigroup:</strong> Mạng lưới gần 160 quốc gia & vùng lãnh thổ (Báo cáo 10-K năm 2025).</p>
+          </div>
+          <div class="rung__foot">Gần 160 quốc gia & vùng lãnh thổ (Form 10-K)</div>
+          <div class="rung__more">Xem chi tiết &rarr;</div>
+        </button>
+      </div>
+
+      <p class="source" style="margin-top:18px;">
+        Nguồn: encyclopedia.com; EBSCO; Bộ Tài chính Mỹ; SEC; Citigroup Form 10-K năm 2025.
+      </p>
+
+      <!-- CHI TIẾT TỪNG NẤC THANG -->
+      <div class="tabs" id="citigroupTabsAnchor">
+        <div class="tabs__nav">
+          <button class="on">Nấc 1: Độc quyền tư nhân</button>
+          <button>Nấc 2: Tài phiệt & Chế độ tham dự</button>
+          <button>Nấc 3: Độc quyền nhà nước</button>
+          <button>Nấc 4: Xuyên quốc gia & Form 10-K</button>
+        </div>
+
+        <!-- PANEL NẤC 1 -->
+        <div class="tabs__panel on">
+          <div class="split">
+            <div>
+              <h3>Nấc 1: Độc quyền tư nhân</h3>
+              <p class="subtitle-red">Từ cạnh tranh tự do đến độc quyền: Citigroup trở thành ngân hàng lớn nhất nước Mỹ
+              </p>
+              <div class="box">
+                <h4>Lý luận Kinh tế Chính trị Mác - Lênin</h4>
+                <ul>
+                  <li>Cạnh tranh gay gắt làm doanh nghiệp nhỏ phá sản, nhường chỗ cho doanh nghiệp lớn; tích tụ và tập
+                    trung tư bản sinh ra độc quyền.</li>
+                  <li>Các hình thức liên kết đi từ lỏng đến chặt: <strong>cartel &rarr; syndicate &rarr; trust &rarr;
+                      consortium</strong>, rồi concern và conglomerate. Ở quy mô toàn cầu là các công ty xuyên quốc gia
+                    (TNCs).</li>
+                </ul>
+              </div>
+              <div class="verdict" style="margin-top:16px;">
+                "Độc quyền không đối lập với cạnh tranh mà sinh ra từ chính cạnh tranh."
+              </div>
+            </div>
+
+            <div>
+              <div class="timeline">
+                <div class="tl">
+                  <time class="big">1812</time>
+                  <p><strong>City Bank of New York</strong> được thành lập, tiền thân đầu tiên của Citigroup hiện đại.
+                  </p>
+                </div>
+                <div class="tl">
+                  <time class="big">1891</time>
+                  <p><strong>James Stillman</strong> nắm quyền chủ tịch khi ngân hàng đang thua lỗ nặng nề.</p>
+                </div>
+                <div class="tl">
+                  <time class="big">1894</time>
+                  <p>Sau cuộc đại khủng hoảng kinh tế 1893, trở thành ngân hàng lớn nhất New York; năm 1894 vươn lên
+                    <strong>lớn nhất nước Mỹ</strong>.
+                  </p>
+                </div>
+                <div class="tl">
+                  <time class="big">1897</time>
+                  <p>Tiến hành thâu tóm toàn bộ <strong>Third National Bank</strong>, củng cố vị thế độc quyền tư nhân.
+                  </p>
+                </div>
+              </div>
+              <p class="source" style="margin-top:10px;">
+                Đối chiếu (hình thức cartel): OPEC – các nước xuất khẩu dầu mỏ phối hợp sản lượng để tác động giá. Với
+                Citigroup, nguồn chỉ cho thấy tích tụ, tập trung vốn qua mở rộng và thâu tóm; không gắn nhãn cartel hay
+                syndicate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL NẤC 2 -->
+        <div class="tabs__panel">
+          <div class="split">
+            <div>
+              <h3>Độc quyền và Tài phiệt Tài chính</h3>
+              <p class="subtitle-red">Sự liên minh máu thịt giữa Ngân hàng và Đại tư bản Công nghiệp</p>
+              <div class="box">
+                <h4>Hồ sơ liên minh gia tộc</h4>
+                <ul>
+                  <li><strong>Hôn nhân tài phiệt:</strong> James Stillman gắn ngân hàng với John D. Rockefeller
+                    (Standard Oil) khi gả hai con gái cho hai con trai của William Rockefeller.</li>
+                  <li><strong>Cú bắt tay thế kỷ 1998:</strong> Citicorp hợp nhất với công ty con của Travelers để lập
+                    Citigroup. Đạo luật Gramm–Leach–Bliley (12/11/1999) bãi bỏ điều khoản cấm của Đạo luật
+                    Glass–Steagall, cho phép ngân hàng thương mại sáp nhập công ty chứng khoán & bảo hiểm.</li>
+                </ul>
+              </div>
+              <div class="verdict" style="margin-top:16px;">
+                Thực chất của "chế độ tham dự": Một nhà tài phiệt chỉ cần một lượng tư bản nhỏ nắm cổ phần chi phối ở
+                công ty mẹ, có thể khống chế lượng vốn khổng lồ gấp 4–10 lần ở các công ty con và cháu.
+              </div>
+            </div>
+
+            <div class="figure">
+              <img src="assets/img/holding.jpg" alt="Mô hình kim tự tháp chế độ tham dự của tài phiệt tài chính" />
+              <figcaption>Kim tự tháp kiểm soát vốn của tài phiệt tài chính</figcaption>
+            </div>
+          </div>
+
+          <!-- Bộ tính toán Chế độ tham dự (Mô phỏng tương tác) -->
+          <div class="holding">
+            <div class="holding__ctrl">
+              <h3>Mô Phỏng Chế Độ Tham Dự (Holding Pyramid)</h3>
+              <p style="color:var(--muted); font-size:0.92rem;">
+                Giả định: Công ty mẹ nắm giữ tỷ lệ cổ phần khống chế ở công ty con, công ty con nắm giữ tỷ lệ tương tự ở
+                công ty cháu.
+              </p>
+              <div class="range">
+                <label><span>Tỷ lệ cổ phần khống chế mỗi tầng:</span> <output id="outShare">51%</output></label>
+                <input type="range" id="rangeShare" min="20" max="60" step="1" value="51" />
+              </div>
+              <div class="range">
+                <label><span>Số lượng công ty mỗi nhánh:</span> <output id="outSubs">3 công ty</output></label>
+                <input type="range" id="rangeSubs" min="2" max="4" step="1" value="3" />
+              </div>
+              <div class="holding__res">
+                <div>
+                  <small>Đòn bẩy kiểm soát vốn</small>
+                  <b class="r" id="outMultRatio">3.8 lần</b>
+                </div>
+                <div>
+                  <small>Hiệu quả tư bản</small>
+                  <b id="outTotalCap" style="font-size:1.1rem; line-height:1.2;">Chỉ cần 26 đv vốn</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="holding__viz">
+              <div class="co boss">TÀI PHIỆT / CTY MẸ<small>Nắm cổ phần chi phối</small></div>
+              <span class="tier-arrow">▼ Mẹ giữ cổ phần chi phối ▼</span>
+              <div class="tier" id="tierSubs"></div>
+              <span class="tier-arrow">▼ Con giữ cổ phần chi phối ▼</span>
+              <div class="tier" id="tierGrand"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL NẤC 3 -->
+        <div class="tabs__panel">
+          <div class="split">
+            <div>
+              <h3>Nấc 3: Độc quyền nhà nước</h3>
+              <p class="subtitle-red">Citigroup 2008–2010: Nhà nước bơm vốn và bảo lãnh để giữ độc quyền đứng vững</p>
+              <div class="box">
+                <h4>Lý luận Mác - Lênin</h4>
+                <ul>
+                  <li>Sức mạnh độc quyền tư nhân kết hợp với sức mạnh của Nhà nước thành một cơ chế thống nhất.</li>
+                  <li>Nhà nước như nhà tư bản tập thể: dùng ngân sách và tín dụng quốc gia gánh rủi ro khi khủng hoảng.
+                  </li>
+                  <li><strong>Liên kết nhân sự:</strong> Robert Rubin, cựu Bộ trưởng Tài chính Mỹ thời Clinton, gia nhập
+                    Citigroup năm 1999 và là chủ tịch ủy ban điều hành giai đoạn 1999–2009.</li>
+                </ul>
+              </div>
+              <div class="verdict" style="margin-top:16px;">
+                Luận giải của nhóm: Nhà nước gánh rủi ro để độc quyền được bảo toàn; kết cục tài chính của Nhà nước là
+                có lãi khi bán cổ phần, nên không nói "dùng tiền thuế bù lỗ" một cách giản đơn, mà bản chất là nhà nước
+                đứng ra bảo hộ cho tư bản độc quyền không bị sụp đổ.
+              </div>
+            </div>
+
+            <div>
+              <div class="timeline">
+                <div class="tl">
+                  <time>10/2008</time>
+                  <p>Bộ Tài chính đầu tư vốn qua Chương trình mua vốn (CPP).</p>
+                  <b>25 tỷ USD</b>
+                </div>
+                <div class="tl">
+                  <time>23/11/2008</time>
+                  <p>Gói bổ sung: cổ phiếu ưu đãi và bảo lãnh danh mục tài sản độc hại. Citi tự chịu 29 tỷ đầu tiên;
+                    chính phủ chịu 90% phần vượt.</p>
+                  <b>Bảo lãnh 306 tỷ</b>
+                </div>
+                <div class="tl">
+                  <time>31/12/2008</time>
+                  <p>Bộ Tài chính đầu tư thêm vốn (Chương trình TIP).</p>
+                  <b>20 tỷ USD</b>
+                </div>
+                <div class="tl">
+                  <time>15/1/2009</time>
+                  <p>Bảo lãnh danh mục chính thức (sau giảm còn 301 tỷ); phần lỗ của Bộ Tài chính tối đa 5 tỷ USD.</p>
+                  <b>301 tỷ USD</b>
+                </div>
+                <div class="tl">
+                  <time>7/2009</time>
+                  <p>Đổi 25 tỷ cổ phiếu ưu đãi lấy khoảng 7,7 tỷ cổ phiếu phổ thông, chính phủ nắm khoảng 27% cổ phần.
+                  </p>
+                  <b>27% cổ phần</b>
+                </div>
+                <div class="tl">
+                  <time>12/2009</time>
+                  <p>Citi hoàn trả 20 tỷ USD và chấm dứt thỏa thuận bảo lãnh.</p>
+                  <b>20 tỷ hoàn trả</b>
+                </div>
+                <div class="tl">
+                  <time>12/2010</time>
+                  <p>Bộ Tài chính bán hết cổ phần, thu hồi 45 tỷ cộng khoảng 12 tỷ USD lợi nhuận.</p>
+                  <b>45 + 12 tỷ lãi</b>
+                </div>
+              </div>
+              <p class="source" style="margin-top:10px;">
+                Nguồn: Bộ Tài chính Mỹ (3/2010, 12/2010); Citigroup 8-K; điều trần S. Hrg. 111-472; Fortune; Wilmarth,
+                Indiana Law Review.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL NẤC 4 -->
+        <div class="tabs__panel">
+          <div class="split">
+            <div>
+              <h3>Nấc 4: Độc quyền xuyên quốc gia</h3>
+              <p class="subtitle-red">Citigroup 2025: Gần 160 quốc gia và vùng lãnh thổ; Đối chiếu bail-in ở Síp 2013
+              </p>
+              <div class="box">
+                <h4>Lý luận Mác - Lênin</h4>
+                <ul>
+                  <li>Độc quyền mở rộng ra thế giới qua xuất khẩu tư bản và công ty xuyên quốc gia (TNCs).</li>
+                  <li>Độc quyền nhà nước quốc tế: liên minh độc quyền và định chế quốc tế (EC, ECB, IMF); bail-in bổ
+                    sung cho bail-out.</li>
+                </ul>
+              </div>
+              <div class="box" style="margin-top:14px;">
+                <h4>Hai cách gánh tổn thất khi ngân hàng sụp đổ:</h4>
+                <ul>
+                  <li><strong>2008, Mỹ (Bail-out):</strong> Nhà nước đầu tư vốn và bảo lãnh để cứu Citigroup từ ngân
+                    sách công.</li>
+                  <li><strong>2013, Síp (Bail-in):</strong> Chủ nợ và người gửi tiền không được bảo hiểm gánh phần lớn
+                    tổn thất (cắt giảm tiền gửi trên 100.000 EUR tới 47,5%).</li>
+                </ul>
+              </div>
+              <div class="verdict" style="margin-top:16px;">
+                "Ở nấc này, độc quyền vượt khỏi biên giới quốc gia; khi khủng hoảng, ai gánh tổn thất tùy vào sức mạnh
+                của quốc gia và định chế đứng sau."
+              </div>
+            </div>
+
+            <div>
+              <div class="kv">
+                <div>
+                  <span>Quốc gia và vùng lãnh thổ có hoạt động</span>
+                  <b>gần 160</b>
+                </div>
+                <div>
+                  <span>Tổng tài sản (cuối năm 2025)</span>
+                  <b>2.657,2 tỷ USD</b>
+                </div>
+                <div>
+                  <span>Doanh thu thuần (cả năm 2025)</span>
+                  <b>85,2 tỷ USD</b>
+                </div>
+                <div>
+                  <span>Mảng Dịch vụ: doanh thu / ngoài Bắc Mỹ</span>
+                  <b>21,3 tỷ / 14,8 tỷ USD (gần 70%)</b>
+                </div>
+                <div>
+                  <span>Thu hẹp bán lẻ</span>
+                  <b>Đã rút khỏi 9 trong 14 thị trường công bố</b>
+                </div>
+              </div>
+
+              <div class="box" style="margin-top:16px;">
+                <h4>Đối chiếu: Khủng hoảng Síp 2013 (Cơ chế Bail-in)</h4>
+                <p style="font-size:0.9rem; color:var(--muted); margin:0;">
+                  25/3/2013: Eurogroup quyết định gói vay tối đa 10 tỷ EUR. Đổi lại, Laiki Bank bị đóng cửa và 47,5%
+                  tiền gửi trên 100.000 EUR tại Bank of Cyprus được chuyển thành cổ phần. Khu vực ngân hàng lớn tới
+                  khoảng 8 lần GDP; thất nghiệp vọt lên 17% vào tháng 10/2013.
+                </p>
+              </div>
+              <p class="source" style="margin-top:8px;">
+                Nguồn: Citigroup 10-K 2025; ESM; AP qua CS Monitor; Bộ Tài chính Síp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHÂN CỰC GIÀU NGHÈO TOÀN CẦU ================= -->
+  <section class="slide" id="toancau">
+    <div class="container">
+      <div class="slide__tag"><span>BẤT BÌNH ĐẲNG QUỐC TẾ & BÁO CÁO OXFAM</span></div>
+      <div class="split">
+        <div>
+          <h2 class="title-xl">
+            PHÂN CỰC<br />
+            <span class="red">GIÀU NGHÈO</span>
+          </h2>
+          <p class="subtitle-red" style="font-size:1.4rem; font-family:var(--f-head); font-weight:800;">
+            TRÊN PHẠM VI THẾ GIỚI
+          </p>
+
+          <div class="statements">
+            <div class="statement">
+              Tài sản tỷ phú toàn cầu 2025: <strong>18,3 nghìn tỷ USD</strong>, tăng 16% so với 2024 và 81% so với 2020
+              (Oxfam, qua Reuters 19/1/2026).
+            </div>
+            <div class="statement r">
+              Phần tăng trong năm: <strong>2,5 nghìn tỷ USD</strong>, xấp xỉ tài sản của 4,1 tỷ người nghèo nhất theo
+              ước tính của Oxfam.
+            </div>
+            <div class="statement">
+              Bắc bán cầu (2024): Chiếm <strong>21% dân số</strong> nhưng nắm giữ <strong>69% tài sản toàn cầu</strong>
+              và <strong>77% tài sản tỷ phú</strong> (Oxfam, 1/2025).
+            </div>
+            <div class="statement r">
+              FDI toàn cầu 2024: 1,5 nghìn tỷ USD (+4%); loại dòng vốn qua các nền kinh tế trung chuyển châu Âu thì −11%
+              (UNCTAD, WIR 2025).
+            </div>
+          </div>
+
+          <!-- Donut chart -->
+          <div class="donut-wrap">
+            <svg class="donut" viewBox="0 0 140 140">
+              <circle class="bg" cx="70" cy="70" r="54" />
+              <circle class="fg" cx="70" cy="70" r="54" />
+              <text x="70" y="76" text-anchor="middle" font-size="22">69%</text>
+            </svg>
+            <div class="legend">
+              <p>
+                <i style="background:var(--navy);"></i>
+                <span><strong>Bắc bán cầu (21% dân số):</strong> Nắm 69% tài sản & 77% tài sản tỷ phú</span>
+              </p>
+              <p>
+                <i style="background:var(--red-soft);"></i>
+                <span><strong>Phần còn lại thế giới (79% dân số):</strong> Chia sẻ 31% tài sản còn lại</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="figure">
+          <img src="assets/img/world.jpg"
+            alt="Bản đồ thế giới phân cực: dòng tài nguyên chảy từ Nam bán cầu lên Bắc bán cầu" />
+          <figcaption>Dòng chảy của cải từ Nam bán cầu về trung tâm tài chính Bắc bán cầu</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHẦN 5: MÂU THUẪN SÂU XA & BÀI HỌC VIỆT NAM ================= -->
+  <section class="part" id="phan5" data-num="5">
+    <div class="container">
+      <span class="part__label">PHẦN 5</span>
+      <h2>NGUYÊN NHÂN SÂU XA, <em>THỰC TIỄN HIỆN ĐẠI</em> VÀ <em>BÀI HỌC CHO VIỆT NAM</em></h2>
+      <p>Từ mâu thuẫn kinh tế cơ bản của Chủ nghĩa Tư bản đến con đường xây dựng nền Kinh tế thị trường Định hướng Xã
+        hội Chủ nghĩa tại Việt Nam.</p>
+    </div>
+  </section>
+
+  <!-- MÂU THUẪN CƠ BẢN & THỰC TIỄN BẤT BÌNH ĐẲNG -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>MÂU THUẪN KINH TẾ CƠ BẢN CỦA CHỦ NGHĨA TƯ BẢN</span></div>
+      <h2 class="title-lg">MẪU THUẪN CƠ BẢN VÀ <span class="red">THỰC TIỄN BẤT BÌNH ĐẲNG</span></h2>
+
+      <div class="trio">
+        <!-- Cột 1: Mâu thuẫn -->
+        <div class="trio__col c1">
+          <div class="trio__text">
+            <h3>MÂU THUẪN:</h3>
+            <p>Sản xuất ngày càng mang tính xã hội hóa cao độ, nhưng tư liệu sản xuất lại thuộc sở hữu tư nhân tư bản
+              chủ nghĩa.</p>
+          </div>
+          <div class="trio__img">
+            <img src="assets/img/surplus.jpg" alt="Công nhân trong nhà máy xã hội hóa" />
+          </div>
+        </div>
+
+        <!-- Cột 2: Hệ quả -->
+        <div class="trio__col c2">
+          <div class="trio__text">
+            <h3>HỆ QUẢ:</h3>
+            <p>Thành quả sản xuất của toàn xã hội bị tập trung vào tay thiểu số giai cấp tư sản nắm giữ tư bản.</p>
+          </div>
+          <div class="trio__img">
+            <img src="assets/img/hero.jpg" alt="Nhà tài phiệt ngồi trên đống tiền" />
+          </div>
+        </div>
+
+        <!-- Cột 3: Minh chứng -->
+        <div class="trio__col c3">
+          <div class="trio__text">
+            <h3>MINH CHỨNG:</h3>
+            <div class="huge">34,5 triệu</div>
+            <p>người Mỹ (10,2%) sống dưới chuẩn nghèo năm 2025.</p>
+            <small>Nguồn: Census Bureau, 2025</small>
+            <div style="margin-top:14px; border-top:1px dashed var(--line); padding-top:12px;">
+              <p style="font-size:0.95rem; color:var(--navy); margin:0;">
+                Tầng lớp trung lưu đối mặt khủng hoảng sinh hoạt phí: khó mua nhà và chật vật chi trả học phí đại học
+                cho con.
+              </p>
+            </div>
+          </div>
+          <div class="trio__img">
+            <img src="assets/img/family.jpg"
+              alt="Gia đình trung lưu Mỹ lo lắng trước ngôi nhà và trường đại học xa vời" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHÁT TRIỂN VÌ CON NGƯỜI (BÀI HỌC VIỆT NAM) -->
+  <section class="slide">
+    <div class="container">
+      <div class="slide__tag"><span>ĐỊNH HƯỚNG XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM</span></div>
+
+      <div class="vn">
+        <div class="vn__title">
+          <h2>Phát triển <span class="red">vì con người</span></h2>
+          <p>Tăng trưởng kinh tế phải đi cùng tiến bộ và công bằng xã hội.</p>
+        </div>
+        <img src="assets/img/vietnam.jpg"
+          alt="Bức tranh cán cân công bằng: tăng trưởng kinh tế cân bằng với hạnh phúc gia đình Việt Nam" />
+        <div class="vn__motto">
+          Dân giàu, nước mạnh, dân chủ, công bằng, văn minh.
+        </div>
+      </div>
+
+      <!-- Bài học cụ thể từ Giáo trình Chương 5 -->
+      <div class="lessons">
+        <div class="lesson">
+          <span class="k">BÀI HỌC 1</span>
+          <h4>Tiến bộ & Công bằng trong từng chính sách</h4>
+          <p>Không chờ đợi nền kinh tế phát triển cao mới thực hiện công bằng; không "hy sinh" công bằng xã hội để chạy
+            theo tăng trưởng kinh tế đơn thuần.</p>
+        </div>
+        <div class="lesson">
+          <span class="k">BÀI HỌC 2</span>
+          <h4>Đa dạng hóa hình thức phân phối</h4>
+          <p>Phân phối chủ yếu theo kết quả lao động và hiệu quả kinh tế, đồng thời bảo đảm an sinh xã hội cho người yếu
+            thế để không ai bị bỏ lại phía sau.</p>
+        </div>
+        <div class="lesson">
+          <span class="k">BÀI HỌC 3</span>
+          <h4>Vai trò kiến tạo của Nhà nước</h4>
+          <p>Nhà nước quản lý nền kinh tế bằng pháp luật và chính sách kinh tế vĩ mô để hạn chế khuyết tật thị trường,
+            ngăn ngừa độc quyền lũng đoạn xã hội.</p>
+        </div>
+      </div>
+
+      <!-- Trích dẫn giáo trình Chương 5 -->
+      <details class="textbook">
+        <summary>
+          <div class="book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z" />
+            </svg>
+          </div>
+          <div class="t">
+            <strong>Giáo trình Kinh tế Chính trị Mác - Lênin: Gắn tăng trưởng kinh tế với công bằng xã hội</strong>
+            <small>Chương 5: Kinh tế thị trường định hướng XHCN ở Việt Nam (Trang 166 - 167)</small>
+          </div>
+          <span class="plus"></span>
+        </summary>
+        <div class="textbook__body">
+          <blockquote>
+            "Nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam thực hiện gắn tăng trưởng kinh tế với công
+            bằng xã hội; phát triển kinh tế đi đôi với phát triển văn hóa - xã hội; thực hiện tiến bộ và công bằng xã
+            hội ngay trong từng chính sách, chiến lược, quy hoạch, kế hoạch và từng giai đoạn phát triển của kinh tế thị
+            trường... Không đợi tới khi có nền kinh tế phát triển cao mới thực hiện tiến bộ và công bằng xã hội, và càng
+            không thể 'hy sinh' tiến bộ và công bằng xã hội để chạy theo tăng trưởng kinh tế đơn thuần. Tuy nhiên, thực
+            hiện tiến bộ và công bằng xã hội không phải là cào bằng hay kiểu bình quân, chia đều các nguồn lực."
+            <span class="cite">— Giáo trình Kinh tế chính trị Mác - Lênin, tr. 166 - 167</span>
+          </blockquote>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= QUIZ TƯƠNG TÁC ================= -->
+  <section class="quiz" id="quiz">
+    <div class="container">
+      <div class="slide__tag" style="color:var(--gold);"><b>TƯƠNG TÁC</b> <span>CỦNG CỐ KIẾN THỨC BÀI THUYẾT TRÌNH</span></div>
+      <h2>Kiểm tra Kiến thức MLN122</h2>
+      <p class="lead">Hệ thống 20 câu hỏi trắc nghiệm khách quan toàn diện kiến thức Kinh tế Chính trị Mác - Lênin kèm đánh giá đúng/sai và chức năng tải kết quả bài làm về máy tính</p>
+
+      <div class="quiz__card" id="quizCard">
+        <div class="quiz__top">
+          <span class="quiz__count" id="quizCount">Câu 1 / 5</span>
+          <span class="quiz__score" id="quizScore">Điểm: 0/5</span>
+        </div>
+        <div class="quiz__bar">
+          <i id="quizBarInner"></i>
+        </div>
+        <div class="quiz__q" id="quizQuestion">Đang tải câu hỏi...</div>
+        <div class="quiz__opts" id="quizOptions"></div>
+        <div class="quiz__explain" id="quizExplain"></div>
+        <div class="quiz__nav">
+          <button class="btn btn--red" id="quizNextBtn" style="display:none;">Câu tiếp theo &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TÀI LIỆU THAM KHẢO ================= -->
+  <section class="refs" id="tailieu">
+    <div class="container">
+      <div class="slide__tag"><span>NGUỒN DỮ LIỆU & ẤN PHẨM HỌC THUẬT</span></div>
+      <h2 class="title-lg">TÀI LIỆU <span class="red">THAM KHẢO</span></h2>
+
+      <ul class="ref-list">
+        <li>
+          <strong>Bộ Giáo dục và Đào tạo (2021).</strong> <em>Giáo trình Kinh tế chính trị Mác - Lênin</em> (Dành cho
+          bậc đại học hệ không chuyên lý luận chính trị). Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.
+        </li>
+        <li>
+          <strong>Chancel, L., Piketty, T., Saez, E., & Zucman, G. (2022).</strong> <em>World Inequality Report
+            2022.</em> World Inequality Lab.
+        </li>
+        <li>
+          <strong>Economic Policy Institute (2022).</strong> <em>CEO pay has skyrocketed 1,460% since 1978.</em> EPI
+          Research Report.
+        </li>
+        <li>
+          <strong>Oxfam International (2025/2026).</strong> <em>Takers Not Makers: Inequality and wealth concentration
+            report.</em> (Reuters tổng hợp 19/1/2026).
+        </li>
+        <li>
+          <strong>U.S. Securities and Exchange Commission (SEC).</strong> <em>Citigroup Inc. Form 10-K Annual Report
+            (2025 & historical).</em>
+        </li>
+        <li>
+          <strong>U.S. Department of the Treasury (2010).</strong> <em>Troubled Asset Relief Program (TARP) Investments
+            and Bailout Recovery Reports.</em>
+        </li>
+        <li>
+          <strong>Wilmarth, A. E. (2002).</strong> <em>The Transformation of the Financial Services Industry: The Case
+            of Citigroup.</em> Indiana Law Review.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= LỜI CẢM ƠN ================= -->
+  <!-- <section class="thanks">
+    <div class="thanks__art">
+      <img src="assets/img/hero.jpg" alt="Tranh nền cảm ơn" />
+    </div>
+    <div class="container thanks__content">
+      <small>KẾT THÚC BÀI THUYẾT TRÌNH</small>
+      <h2>XIN CẢM ƠN</h2>
+      <h3>ĐÃ LẮNG NGHE!</h3>
+      <div style="margin-top:24px;">
+        <p style="font-family:var(--f-head); font-weight:700; color:var(--navy); font-size:1.15rem; margin:0 0 6px;">
+          Q&amp;A
+        </p>
+        <p style="color:var(--muted); font-size:0.95rem; margin:0 0 18px;">
+          Rất mong nhận được câu hỏi và góp ý của Thầy/Cô và các bạn!
+        </p>
+        <span style="font-family:var(--f-head); font-weight:700; color:var(--red);">Lớp: SE1913 | Nhóm: 07</span>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <b>MLN122 · Kinh tế Chính trị Mác - Lênin</b> &bull; Sản phẩm sáng tạo Nhóm 07 (Lớp SE1913)
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nút quay lại đầu trang -->
+  <button class="to-top" id="toTopBtn" aria-label="Lên đầu trang">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- Thư viện xuất file PDF chuẩn tiếng Việt UTF-8 -->
+  <script src="js/html2pdf.bundle.min.js"></script>
+  <script>
+    if (typeof html2pdf === "undefined") {
+      var s = document.createElement("script");
+      s.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+      document.head.appendChild(s);
+    }
+  </script>
+  <!-- Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
